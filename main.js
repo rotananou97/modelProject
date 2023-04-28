@@ -6,6 +6,7 @@ const getCloseBtn = document.querySelector("#close-btn");
 const clickEventOnModelButton = () => {
   getMainSection.style.display = "flex";
 };
+// add more functions
 modelBtn.addEventListener("click", clickEventOnModelButton);
 const clickOnExitButton = () => {
   getMainSection.style.display = "none";
