@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: url("./images/nature.jpeg");
+  position: relative;
+}
+
+.model-btn {
+  position: absolute;
+  padding: 20px;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(81, 81, 83);
+  color: white;
+  font-size: 2rem;
+  transition: 0.5s;
+  top: 70%;
+  left: 20%;
+}
+.model-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+p {
+  padding: 40px;
+  font-size: 20px;
+}
+.main-section {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(136, 122, 122);
+  animation: animatemodel 1s;
+  display: none;
+  z-index: 1;
+}
+#close-btn {
+  color: white;
+  background-color: red;
+  width: 20px;
+  margin-bottom: 79px;
+  padding: 3px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+#close-btn:hover {
+  cursor: pointer;
+}
+/* model animation section */
+
+@keyframes animatemodel {
+  from {
+    top: 10%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
